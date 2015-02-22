@@ -1,11 +1,17 @@
 <launch>
-    <include file="$(find pr2_description)/robots/upload_pr2.launch" />
+    <include file="$(find pr2_description)/robots/upload_pr2.launch" >
+        <arg name="kinect" value="false" />
+    </include>
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find skyskysky_2015)/skyskysky.rviz" respawn="true" />
-    
+
+    <node name="mapp" pkg="map_server" type="map_server" args="$(find skyskysky_2015)/set.yaml" />
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
     <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
         <rosparam param="source_list">['/source_joints',]</rosparam>
     </node>
     
-    <node name="off" pkg="pr2_score_creator" type="offline.py" args="$(find skyskysky_2015)/test.yaml" output="screen"/>
+    <!--node name="off" pkg="pr2_score_creator" type="offline.py" args="$(find skyskysky_2015)/test.yaml" output="screen"/-->
+
+    <param name="joan" command="$(find xacro)/xacro.py '$(find skyskysky_2015)/joan.urdf'" />
+    <node name="jtf" pkg="tf" type="static_transform_publisher" args="2.7 -4.4 0 1.51 0 0 /map /joan 100"/>
 </launch>
