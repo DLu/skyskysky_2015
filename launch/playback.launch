@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find pr2_description)/robots/upload_pr2.launch" />
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find skyskysky_2015)/skyskysky.rviz" respawn="true" />
+    
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="state_publisher" />
+    <node name="joint_state_publisher" pkg="joint_state_publisher" type="joint_state_publisher">
+        <rosparam param="source_list">['/source_joints',]</rosparam>
+    </node>
+    
+    <node name="off" pkg="pr2_score_creator" type="offline.py" />
+</launch>
