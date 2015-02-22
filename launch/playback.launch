@@ -7,5 +7,5 @@
         <rosparam param="source_list">['/source_joints',]</rosparam>
     </node>
     
-    <node name="off" pkg="pr2_score_creator" type="offline.py" />
+    <node name="off" pkg="pr2_score_creator" type="offline.py" args="$(find skyskysky_2015)/test.yaml" output="screen"/>
 </launch>
