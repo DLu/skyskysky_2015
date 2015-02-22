@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<robot name="joan">
+  <link name="joan">
+    <visual>
+      <geometry>
+        <mesh filename="package://skyskysky_2015/joan.dae" scale=".025 .025 .025" />
+      </geometry>
+      <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+  </link>
+</robot>
