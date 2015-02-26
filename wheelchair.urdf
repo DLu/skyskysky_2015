@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<robot name="wheelchair">
+  <link name="wheelchair">
+    <visual>
+      <geometry>
+        <mesh filename="package://skyskysky_2015/wheelchair.dae" scale="1.0 1.0 1.0" />
+      </geometry>
+    </visual>
+  </link>
+</robot>
