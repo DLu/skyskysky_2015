@@ -1,0 +1,6 @@
+<launch>
+  <node name="map_server" pkg="map_server" type="map_server" args="$(find skyskysky_2015)/map.yaml" />
+
+  <include file="$(find pr2_machine)/$(env ROBOT).machine" />
+  <include file="$(find skyskysky_2015)/launch/amcl.launch" />
+</launch>

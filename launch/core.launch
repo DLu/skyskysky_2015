@@ -1,0 +1,4 @@
+<launch>
+  <include file="$(find skyskysky_2015)/launch/navigation.launch" />
+  <include file="$(find pr2_props)/launch/pr2_props.launch" />
+</launch>
