@@ -1,4 +1,8 @@
 <launch>
+    <arg name="joan0" default="false"/>
+    <arg name="joan1" default="false"/>
+    <arg name="joan2" default="false"/>
+    
     <include file="$(find pr2_description)/robots/upload_pr2.launch" >
         <arg name="kinect" value="false" />
     </include>
@@ -13,5 +17,7 @@
     <!--node name="off" pkg="pr2_score_creator" type="offline.py" args="$(find skyskysky_2015)/test.yaml" output="screen"/-->
 
     <param name="joan" command="$(find xacro)/xacro.py '$(find skyskysky_2015)/joan.urdf'" />
-    <node name="jtf" pkg="tf" type="static_transform_publisher" args="2.7 -4.4 0 1.51 0 0 /map /joan 100"/>
+    <node name="jtf" pkg="tf" type="static_transform_publisher" args="-100 -100 0 1.51 0 0 /map /joan 100" if="$(arg joan0)"/>
+    <node name="jtf" pkg="tf" type="static_transform_publisher" args="2.7 -4.4 0 1.51 0 0 /map /joan 100" if="$(arg joan1)"/>
+    <node name="jtf" pkg="tf" type="static_transform_publisher" args="2.5 -2.5 0 1.50 0 0 /map /joan 100" if="$(arg joan2)"/>
 </launch>
