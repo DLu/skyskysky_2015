@@ -2,47 +2,86 @@
   label: start
   r: [-1.2748099820359928, 1.2913509393595637, -1.4453922923150238, -1.215468099614357, -7.363781428817319, -1.424853004564636, 39.228089225052166]
   h: [0,0]
+  b: [0.0, 0.0, 0.0]
   transition: service
+- t: 1.0
+  b: [0.0, 1.0, 0.0]
+  label: Entrance1
+- b: [4.0, 1.0, 0.0]
+  label: Entrance2
+- b: [4.0, 1.0, -1.51]
+  t: 1.5
+  label: Entrance3
+- b: [4.0, -3.0, -1.51]
+  label: Entrance4
+- b: [4.0, -3.0, -3.1415]
+  t: 1.5
+  label: Entrance5
+- b: [2.0, -3.0, -3.1415]
+  label: Entrance6
+- b: [2.0, -3.0, 0.0]
+  label: Entrance7
+  t: 1.5
+  h: [0, 0]
+  transition: service    
 - h: [-1.0, 0.0]
   t: 1.5
+  label: Look1A
 - h: [-1.0, 0.3]
   t: 1.5
+  label: Look1B
   transition: service
 - h: [0.0, 0.0]
   t: 1.0
+  label: ShakeNo1A
 - h: [0.7, 0.0]
   t: 0.7
+  label: ShakeNo1B
 - h: [-0.7, 0.0]
   t: 1.2
+  label: ShakeNo1C
 - h: [0.7, 0.0]
   t: 1.2
+  label: ShakeNo1D
 - h: [-1.0, 0.3]
   t: 1.5
+  label: ShakeNo1E
   transition: service
 - h: [0.0, 0.0]
   t: 1.0
+  label: ShakeNo2A
 - h: [0.7, 0.0]
   t: 0.7
+  label: ShakeNo2B
 - h: [-0.7, 0.0]
   t: 1.2
+  label: ShakeNo2C
 - h: [0.7, 0.0]
   t: 1.2
+  label: ShakeNo2D
 - h: [-1.0, 0.3]
   t: 1.5
+  label: ShakeNo2E
   transition: service
 - h: [-1.0, -0.2]
   t: 1.0
+  label: ThinkA
 - h: [-0.8, -0.2]
   t: 0.5
+  label: ThinkB
   transition: service
 - h: [0.7, 0.0]
   t: 1.0
+  label: ShakeNo3A
 - h: [-0.7, 0.0]
   t: 1.2
+  label: ShakeNo3B
 - h: [0.7, 0.0]
   t: 1.2
+  label: ShakeNo3C
 - h: [-1.0, 0.3]
   t: 1.5
+  label: ShakeNo3D
   transition: service
 - h: [0.0, 0.0]
-  transition: service
+  label: Neutral
