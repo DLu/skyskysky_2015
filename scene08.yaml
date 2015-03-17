@@ -88,4 +88,26 @@
   label: ShakeNo3D
   transition: service
 - h: [0.0, 0.0]
+  b: [2.0, -3.0, 0.0]
   label: Neutral
+  transition: service
+- b: [4.0, -3.0, 0]
+  t: 4.0
+  label: Exit1
+- b: [4.0, -3.0, 1.51]
+  label: Exit2
+- b: [4.0, 1.0, 1.51]
+  label: Exit3
+  t: 6.0
+- b: [4.0, 1.0, 3.1415]
+  label: Exit4
+- b: [0.0, 1.0, 3.1415]
+  t: 6.0
+  label: Exit5
+- b: [0.0, 1.0, 0]
+  t: 4.0
+  label: Exit6
+
+
+
+
