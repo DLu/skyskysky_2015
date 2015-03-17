@@ -3,28 +3,32 @@
   label: start
   r: [-1.2748099820359928, 1.2913509393595637, -1.4453922923150238, -1.215468099614357, -7.363781428817319, -1.424853004564636, 39.228089225052166]
   h: [0, -0.2]
+  t: 10.0
   transition: service
 - b: [0.0, 1.0, 0.0]
   label: EntranceA
-  t: 1.0
+  t: 2.0
 - b: [4.0, 1.0, 0.0]
   label: EntranceB
+  t: 6.0
 - b: [4.0, 1.0, -1.51]
-  t: 1.5
   label: EntranceC
 - b: [4.0, -3.0, -1.51]
   label: EntranceD
+  t: 6.0
 - b: [4.0, -3.0, -3.1415]
-  t: 1.5
+  t: 2.0
   label: EntranceE
 - b: [2.0, -3.0, -3.1415]
   label: EntranceF
+  t: 4.0
 - b: [2.0, -3.0, 0.0]
   label: EntranceG
+  t: 6.0
   transition: service
 - b: [2.0, -3.0, -0.8]
   h: [0.0, 0.0]
-  t: 0.7
+  t: 2.5
   label: TurnToDrLow
   transition: service
 - h: [0.0, 0.5]
@@ -36,7 +40,7 @@
   b: [2.0, -3.0, -0.8]
 - b: [2.0, -3.0, 0.0]
   label: TurnBack
-  t: 0.7
+  t: 2.5
   transition: service
 - h: [1.0, -0.2]
   label: LookAtDrLow
@@ -61,11 +65,15 @@
   b: [2.0, -3.0, 0.0]
 - b: [4.0, -3.0, 0.0]
   label: ExitA
+  t: 4.0
 - b: [4.0, -3.0, 1.51]
+  t: 2.0
   label: ExitB
 - b: [4.0, 1.0, 1.51]
   label: ExitC
+  t: 6.0
 - b: [4.0, 1.0, -3.14]
   label: ExitD
 - b: [0.0, 1.0, -3.14]
   label: ExitE
+  t: 6.0
