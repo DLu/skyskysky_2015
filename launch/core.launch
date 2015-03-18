@@ -1,4 +1,5 @@
 <launch>
   <include file="$(find skyskysky_2015)/launch/navigation.launch" />
+  <node name="wheelchair_monitor" pkg="furniture_estimator" type="wheelchair.py" output="screen"/>
   <include file="$(find pr2_props)/launch/pr2_props.launch" />
 </launch>
