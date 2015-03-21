@@ -16,11 +16,13 @@
   label: EntranceD
   t: 10
 - b: [3.12, -2.85, -3.14]
+  label: EntranceE
   t: 3.0
 - b: [2.0, -3.0, -3.14]
+  label: EntranceF
   t: 3.0
 - b: [2.0, -3.0, 0.0]
-  label: EntranceE
+  label: EntranceG
   t: 5.0
   transition: service
 - b: [2.0, -3.0, -0.8]
@@ -43,22 +45,26 @@
   label: LookAtDrLow
   t: 2.0
 - h: [1.0, -0.2]
+  label: PauseDrLow
   t: 1.0
 - h: [-1.0, -0.2]
   label: LookAtHarbor
   t: 2.0
 - h: [-1.0, -0.2]
+  label: PauseHarbor
   t: 1.0
 - h: [0.0, 0.0]
   label: LookOut
   t: 2.0
 - h: [0.0, 0.0]
+  label: PauseNeutral
   t: 1.0
 - h: [0.0, -0.5]
   label: HavePride
   t: 0.5
 - b: [2.0, -3.0, 0.0]
   h: [0.0, -0.5]
+  label: PausePride
   t: 1.5
 - b: [3.12, -2.85, 0.0]
   label: ExitA
