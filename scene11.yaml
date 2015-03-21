@@ -1,0 +1,40 @@
+# Entrance and Exit
+- b: [-0.25, 1.68, 0]
+  h: [0,0]
+  l: [1.27, 1.29, 1.45, -1.22, 7.36, -1.42, 39.23]
+  label: start
+  r: [-1.27, 1.29, -1.45, -1.22, -7.36, -1.42, 39.23]
+  transition: service
+- b: [-0.15, 3.0, 0]
+  label: Entrance1
+  t: 4.5
+- b: [2.6, 3.0, 0]
+  label: Entrance2
+  t: 5.0
+- b: [2.6, 3.0, -1.57]
+  label: Entrance3
+- b: [2.6, -4.0, -1.57]
+  label: Entrance4
+  t: 10
+- b: [2.6, -4.0, 1.57]
+  label: Entrance5
+  t: 5.0
+  h: [0, 0]
+  transition: service    
+
+
+
+- b: [2.6, -4.0, 1.57]
+  t: 4.0
+  label: Exit1
+- b: [2.6, 3.0, 1.57]
+  label: Exit2
+  t: 10.0
+- b: [2.6, 3.0, 3.1415]
+  label: Exit3
+- b: [-0.15, 3.0, 3.1415]
+  t: 6.0
+  label: Exit4
+- b: [-0.25, 1.68, 0]
+  t: 4.0
+  label: Exit5
