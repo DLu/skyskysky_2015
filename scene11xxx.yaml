@@ -1,3 +1,4 @@
+# grab, manual driving, grab blanket
 - h: [0,0]
   transition: service
 - services: [/wheelchair_monitor/on]
