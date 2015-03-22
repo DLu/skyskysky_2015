@@ -1,5 +1,5 @@
 - b: [-0.25, 1.68, 0]
-  h: [0, -0.2]
+  h: [0, 0]
   l: [1.27, 1.29, 1.45, -1.22, 7.36, -1.42, 39.23]
   label: start
   r: [-1.27, 1.29, -1.45, -1.22, -7.36, -1.42, 39.23]
@@ -22,11 +22,12 @@
   label: EntranceF
   t: 3.0
 - b: [2.0, -3.0, 0.0]
+  h: [0, 0]
   label: EntranceG
   t: 5.0
   transition: service
 - b: [2.0, -3.0, -0.8]
-  h: [0.0, 0.0]
+  h: [0.0, -0.2]
   label: TurnToDrLow
   t: 2.5
   transition: service
@@ -34,10 +35,11 @@
   label: NodA
   t: 0.7
 - b: [2.0, -3.0, -0.8]
-  h: [0.0, 0.0]
+  h: [0.0, -0.2]
   label: NodB
   t: 0.7
 - b: [2.0, -3.0, 0.0]
+  h: [0, 0]
   label: TurnBack
   t: 2.5
   transition: service
