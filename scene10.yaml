@@ -6,21 +6,22 @@
   transition: service
 - b: [-0.15, 3.0, 0]
   label: EntranceA
-  t: 4.5
+  t: 4.0
 - b: [3.12, 2.82, 0.0]
   label: EntranceB
-  t: 6.0
+  t: 4.4
 - b: [3.12, 2.82, -1.57]
   label: EntranceC
-- b: [3.12, -2.85, -1.49]
+  t: 1.5
+- b: [3.12, -2.85, -1.57]
   label: EntranceD
-  t: 10
+  t: 8.0
 - b: [3.12, -2.85, -3.14]
   label: EntranceE
-  t: 3.0
+  t: 1.5
 - b: [2.0, -3.0, -3.14]
   label: EntranceF
-  t: 3.0
+  t: 1.5
 - b: [2.0, -3.0, 0.0]
   h: [0, 0]
   label: EntranceG
@@ -76,13 +77,13 @@
   t: 2.0
 - b: [3.12, 2.82, 1.57]
   label: ExitC
-  t: 10.0
+  t: 7.5
 - b: [3.12, 2.82, 3.14]
   label: ExitD
-  t: 3.0
+  t: 1.5
 - b: [-0.15, 3.0, 3.1415]
   label: ExitE
-  t: 5.0
+  t: 4.5
 - b: [-0.25, 1.68, 0]
   label: ExitF
-  t: 4.0
+  t: 10.0
