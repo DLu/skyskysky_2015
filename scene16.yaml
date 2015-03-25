@@ -7,7 +7,6 @@
 - b: [-0.15, 3.0, 0]
   label: Entrance1
   t: 3.5
-  transition: service
 - b: [2.6, 3.0, 0]
   h: [-1.6179387525253588, 0.10545279340549739]
   label: Entrance2
